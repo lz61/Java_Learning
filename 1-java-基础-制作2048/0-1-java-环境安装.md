@@ -2,7 +2,16 @@
 
 2.安装vscode中文扩展,code runner扩展, java扩展.
 
-3.安装jdk.
+3.安装jdk.(注意不是安装jre!)
+
+检验:
+
+```
+java --version // 安装了java
+javac --version // 安装了jdk
+```
+
+
 
 4.学习工科的前提: 少问为什么,多问怎么做.
 
