@@ -2,9 +2,9 @@
 
 2.安装vscode中文扩展,code runner扩展, java扩展.
 
-3.安装jdk.(注意不是安装jre!)
+3.安装jdk(至少安装17版本,不要安装太新的版本).(注意不是安装jre!)
 
-检验:
+检验jdk版本:
 
 ```
 java --version // 安装了java
