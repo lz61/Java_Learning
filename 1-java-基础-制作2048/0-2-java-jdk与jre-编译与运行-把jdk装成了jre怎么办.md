@@ -12,6 +12,14 @@ A.以python为例:
 python --version
 ```
 
+mac:
+
+```
+python3 --version
+```
+
+
+
 分离python编译与运行:
 
 ```
@@ -80,6 +88,12 @@ javac Test.java
 
 注意到生成了.class文件.
 
+
+
+.class就类似.exe文件.
+
+
+
 运行:
 
 ```
@@ -132,14 +146,11 @@ B.输入: 可执行文件 输出: 运行结果.(由某些工具来运行可执�
 
 4.如何卸载本机(macOS)残存的jre:
 
-```
-在 macOS 系统中卸载 JRE（Java Runtime Environment）的步骤如下，操作相对直接：
-步骤 1：确认终端
-按下 Command + 空格 调出 Spotlight 搜索，输入 “终端” 并打开。
-步骤 2：删除 JRE 核心文件
-在终端中执行以下命令（需要管理员权限，输入密码时不会显示字符，输入完成后按回车即可）：
+A.调出终端
 
-bash
+B.删除jre相关文件:
+
+```
 # 删除Java插件（用于浏览器等）
 sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
 
@@ -148,28 +159,34 @@ sudo rm -rf /Library/PreferencesPanes/JavaControlPanel.prefPane
 
 # 删除Java相关支持文件
 sudo rm -rf /Library/Application\ Support/Oracle/Java/
-步骤 3：检查是否有残留的 JRE 安装目录
-部分版本的 JRE 可能会在 /Library/Java/JavaVirtualMachines/ 目录下留有文件，可执行以下命令查看并删除：
-
-bash
-# 列出该目录下的Java相关文件
-ls /Library/Java/JavaVirtualMachines/
-
-# 若存在类似“jre1.8.0_xxx.jdk”的文件，执行删除（替换为实际文件名）
-sudo rm -rf /Library/Java/JavaVirtualMachines/jre1.8.0_xxx.jdk
-
-
-步骤 4：验证卸载是否成功
-在终端中输入以下命令，若提示 “command not found” 或类似信息，说明 JRE 已成功卸载：
-
-bash
-java -version
-
-注意事项
-以上权限不足的提示，确保命令前加了sudo并输入正确的管理员密码。
-若之前手动设置过JAVA_HOME等环境变量，可在~/.bash_profile、~/.zshrc等配置文件中删除相关条目（可选，不影响卸载本身）。
-
-通过以上步骤，即可彻底移除 macOS 系统中的 JRE。
 ```
 
-再运行.dmg安装jdk即可.
+C.检查是否有残留的JRE安装目录:
+
+```
+ls /Library/Java/JavaVirtualMachines/
+```
+
+若存在类似“jre1.8.0_xxx.jdk”的文件，执行删除（替换为实际文件名）
+
+```
+sudo rm -rf /Library/Java/JavaVirtualMachines/jre1.8.0_xxx.jdk
+```
+
+D.验证卸载是否成功:
+
+在终端中输入以下命令，若提示 “command not found” 或类似信息，说明 JRE 已成功卸载：
+
+```
+java -version
+```
+
+注意事项
+
+以上权限不足的提示，确保命令前加了sudo并输入正确的管理员密码。
+
+若之前手动设置过JAVA_HOME等环境变量，可在配置文件中删除相关条目（可选，不影响卸载本身）。
+
+通过以上步骤，即可彻底移除 macOS 系统中的 JRE。
+
+E.再运行.dmg安装jdk即可.
