@@ -60,7 +60,19 @@ C.目前的所有代码必须强制写在
 
 D.在VScode编辑器中,如果希望"简单"输出System.out.println,则可以简写成"sout",很方便.
 
+还有main,public class的东西.
 
+
+
+E.System.out.println()
+
+System.out.print(): 
+
+
+
+F.i: integer
+
+s: string
 
 4.java基本语法格式:
 
@@ -83,6 +95,19 @@ B.多行注释:
 */
 ```
 
+VScode提供的逐行注释.
+
+
+
 C. 任何编程语言的程序特性: 逐行执行代码.
 
 java也不例外.
+
+
+
+5.一些偷懒的地方:
+
+
+
+6.什么情况下不需要写public class?
+
