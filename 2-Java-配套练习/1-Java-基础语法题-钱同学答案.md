@@ -43,7 +43,7 @@ public class test {
 public class test {
     public static void main(String[] args) {
         int[] nums={2,4,6,8};
-        nums[0]=10;
+        nums[2]=10;
         System.out.println(nums.length);
         System.out.println(nums[0]);
         System.out.println(nums[1]);
@@ -57,7 +57,7 @@ public class test {
 
 2.**二维数组创建**
 
-定义一个 3 行 2 列的 int 二维数组`matrix`，初始化所有元素为 1，打印数组中第 2 行第 1 列的元素（注意索引从 0 开始）
+定义一个 3 行 2 列的 int 二维数组`matrix`，初始化元素为1,2,3,4,5,6，打印数组中第 2 行第 1 列的元素（注意索引从 0 开始）
 
 ```
 ```
